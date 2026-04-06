@@ -31,13 +31,13 @@ class _EffectsState extends State<Effects> with SingleTickerProviderStateMixin {
   void initState() {
     super.initState();
 
-    loadUiImage("effect_cross.jpg").then((img) {
+    loadUiImage("assets/effect_cross.jpg").then((img) {
       setState(() {
         imageCross = img;
       });
     });
 
-    loadUiImage("effect_circle.jpg").then((img) {
+    loadUiImage("assets/effect_circle.jpg").then((img) {
       setState(() {
         imageCircle = img;
       });
