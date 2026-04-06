@@ -23,10 +23,8 @@ class Reels extends StatelessWidget {
           final boxHeight = reelWidth * 3 + 104;
           final double scale = min(height / 490.0, 1);
 
-          print(boxHeight);
-
           return Transform.translate(
-            offset: Offset(0.0, (height / 2 - boxHeight / 2) * 0.3),
+            offset: Offset(0.0, (height - boxHeight) / 2),
             child: Transform.scale(
               scale: scale,
               child: Stack(
@@ -42,7 +40,7 @@ class Reels extends StatelessWidget {
                           Colors.black,
                           Colors.transparent,
                         ],
-                        stops: [0.0, 0.08, 0.92, 1.0],
+                        stops: [0.0, 0.05, 0.95, 1.0],
                       ).createShader(bounds);
                     },
                     blendMode: BlendMode.dstIn,

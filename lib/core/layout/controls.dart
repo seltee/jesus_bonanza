@@ -17,24 +17,27 @@ class Controls extends StatelessWidget {
         final bet = gameModel.bet;
         final betList = gameModel.betList;
 
-        return Padding(
-          padding: EdgeInsetsGeometry.directional(
-            start: 8,
-            end: 8,
-            top: 8,
-            bottom: 24,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              _ControlsValue(title: "MONEY", value: money),
-              _PlayButton(),
-              _BetValue(
-                bet: bet,
-                bets: betList,
-                onSelect: (int bet) => gameModel.setBet(bet),
-              ),
-            ],
+        return ConstrainedBox(
+          constraints: BoxConstraints(maxWidth: 480, maxHeight: 420),
+          child: Padding(
+            padding: EdgeInsetsGeometry.directional(
+              start: 8,
+              end: 8,
+              top: 8,
+              bottom: 24,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                _ControlsValue(title: "MONEY", value: money),
+                _PlayButton(),
+                _BetValue(
+                  bet: bet,
+                  bets: betList,
+                  onSelect: (int bet) => gameModel.setBet(bet),
+                ),
+              ],
+            ),
           ),
         );
       },
