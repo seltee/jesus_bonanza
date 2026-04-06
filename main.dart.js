@@ -56015,8 +56015,8 @@ J0(a){switch(a.a){case 0:return this.d
 case 1:return this.e}},
 aB(){this.b7()
 var s=t.P
-A.oX("effect_cross.jpg").aT(new A.a_w(this),s)
-A.oX("effect_circle.jpg").aT(new A.a_x(this),s)},
+A.oX("assets/effect_cross.jpg").aT(new A.a_w(this),s)
+A.oX("assets/effect_circle.jpg").aT(new A.a_x(this),s)},
 T(a){var s=a.ak(t.D5).f
 return new A.eC(new A.a_t(this,s),null,s.x,null)}}
 A.a_w.prototype={
@@ -56262,7 +56262,7 @@ A.Os.prototype={
 $2(a,b){return a+b},
 $S:375}
 A.Oq.prototype={
-$1(a){if(this.a.iL(6)===0)return this.b
+$1(a){if(this.a.iL(5)===0)return this.b
 else return B.bM[$.p3().iL(28)]},
 $S:376}
 A.Ot.prototype={
