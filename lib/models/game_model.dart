@@ -90,7 +90,7 @@ class GameModel extends ChangeNotifier {
     return List.generate(
       5,
       (_) => List.generate(3, (i) {
-        if (rng.nextInt(6) == 0) {
+        if (rng.nextInt(5) == 0) {
           return baseSym;
         } else {
           return getRandomSymbol();
